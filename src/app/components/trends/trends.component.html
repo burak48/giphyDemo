@@ -1,0 +1,13 @@
+<span class="border">
+    <div class="container">
+        <h2>Trending Gifs</h2>
+        <div class="row">
+            <img *ngFor="let item of trends" src="{{ item.images.original.url }}" alt="{{item.title}}">
+        </div>
+        <div class="row mt-2" *ngIf="trends">
+            <div class="col-sm-12">
+                <button class="btn btn-danger" (click)="loadmore()" style="margin-left: 50%">Load More</button>
+            </div>
+        </div>
+    </div>
+</span>
