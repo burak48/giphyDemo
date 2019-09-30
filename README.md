@@ -11,6 +11,22 @@ $ npm install
 $ npm start
 ```
 
+## Demo 
+
+Try the demo at [heroku](https://giphy-angular-demo.herokuapp.com/).
+
+## Deploy to Heroku
+
+```
+$ heroku login
+$ git init
+$ heroku git:clone -a giphy-angular-demo
+$ git add .
+$ git commit -m "giphy-angular-demo-deploy-heroku"
+$ git push heroku master
+$ heroku open
+```
+
 ## Images
 
 <img src="https://user-images.githubusercontent.com/18161643/65856316-f7349380-e369-11e9-998f-bf3964d077d8.png" width="75%" alt="giphyTrends">
